@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<item id="lng">ES</item>
+	<item id="lngLNG">es-ES</item>
+	<item id="lngName">Español</item>
+	<item id="charset">UTF-8</item>
+  <item id="idioma">Idioma seleccionado</item>
+
+  <item id="homepage">Inicio</item>
+  <item id="infoPersonal">Información personal</item>
+  <item id="usuario">Usuario</item>
+  <item id="password">Contraseña</item>
+  <item id="rol">Rol</item>
+  <item id="nombre">Nombre</item>
+  <item id="apellido1">1. Apellido</item>
+  <item id="apellido2">2. Apellido</item>
+  <item id="usuarioActivo">Usuario activo</item>
+
+  <item id="preferenciasUsuario">Preferencias de usuario</item>
+  <item id="nuevoRegistro">Nuevo usuario</item>
+
+  <item id="visualizar">Visualizar</item>
+  <item id="editar">Editar</item>
+  <item id="guardar">Guardar</item>
+</lang>

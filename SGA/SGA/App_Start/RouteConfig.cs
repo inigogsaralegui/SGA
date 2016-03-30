@@ -15,9 +15,30 @@ namespace SGA
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Index"}
             );
+
+            routes.MapRoute(
+               name: "Crud",
+               url: "{controller}/crud/{user}",
+               defaults: new { controller = "Home", action = "Crud", user = UrlParameter.Optional }
+           );
+
+            routes.MapRoute(
+               name: "Guardar",
+               url: "{controller}/guardar/{user}",
+               defaults: new { controller = "Home", action = "Guardar", user = UrlParameter.Optional }
+           );
+
+            routes.MapRoute(
+                name: "Ver",
+                url: "{controller}/ver/{user}",
+                defaults: new { controller = "Home", action = "Ver", user = UrlParameter.Optional }
+            );
+
+            
+
         }
     }
 }

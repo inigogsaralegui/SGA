@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<item id="lng">EUS</item>
+	<item id="lngLNG">eu-ES</item>
+	<item id="lngName">Euskera</item>
+	<item id="charset">UTF-8</item>
+  <item id="idioma">Aukeratutako hizkuntza</item>
+
+	<item id="homepage">Nagusia</item>
+  <item id="infoPersonal">Informazio pertsonala</item>
+  <item id="usuario">Erabiltzailea</item>
+  <item id="password">Pasahitza</item>
+  <item id="rol">Rola</item>
+  <item id="nombre">Izena</item>
+  <item id="apellido1">1. Abizena</item>
+  <item id="apellido2">2. Abizena</item>
+  <item id="usuarioActivo">Erabiltzailea aktibaturik</item>
+  
+  <item id="preferenciasUsuario">Erabiltzailearen ezarpenak</item>
+  <item id="nuevoRegistro">Erabiltzaile berria</item>
+  
+  <item id="visualizar">Ikusi</item>
+  <item id="editar">Aldatu</item>
+  <item id="guardar">Gorde</item>
+</lang>

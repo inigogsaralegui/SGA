@@ -1,0 +1,69 @@
+﻿@model SGA.Models.USRS
+
+@{
+    ViewBag.Title = (Model.sUSRS_USUARIO != null ? Model.sUSRS_NOMBRE + " " + Model.sUSRS_APELLIDO1 + " " + Model.sUSRS_APELLIDO2 : @Html.Localize("nuevoRegistro").ToString());
+}
+
+<div>
+    <ol class="breadcrumb">
+        <li><a href="#">@Html.Localize("homepage")</a></li>
+        <li><a href="~/">@Html.Localize("usuario")</a></li>
+        <li class="active">@(Model.sUSRS_USUARIO != null ? Model.sUSRS_NOMBRE + " " + Model.sUSRS_APELLIDO1 + " " + Model.sUSRS_APELLIDO2 : @Html.Localize("nuevoRegistro").ToString())</li>
+    </ol>
+</div>
+
+@using (Html.BeginForm("Guardar", "Home", FormMethod.Post, new { id = "frm-usuario" }))
+{
+    <div class="panel panel-default">
+        <div class="panel-heading">@Html.Localize("infoPersonal")</div>
+        <div class="panel-body">
+            <div class="form-group">
+                @Html.Localize("usuario")
+                @Html.TextBoxFor(model => model.sUSRS_USUARIO, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.Localize("password")
+                @Html.TextBoxFor(model => model.sUSRS_PASSWORD, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.Localize("rol")
+                @Html.TextBoxFor(model => model.sUSRS_ROL, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.Localize("nombre")
+                @Html.TextBoxFor(model => model.sUSRS_NOMBRE, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.Localize("apellido1")
+                @Html.TextBoxFor(model => model.sUSRS_APELLIDO1, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.Localize("apellido2")
+                @Html.TextBoxFor(model => model.sUSRS_APELLIDO2, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.Localize("usuarioActivo")
+                @Html.CheckBoxFor(model => model.sUSRS_ACTIVO, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="panel-heading">@Html.Localize("preferenciasUsuario")</div>
+        <div class="panel-body">
+            @Html.Localize("idioma")
+            @Html.TextBoxFor(model => model.sUSRS_CULTURA, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="text-right">
+        <button type="submit" class="btn btn-primary">@Html.Localize("guardar")</button>
+    </div>
+}
+
+    
+
